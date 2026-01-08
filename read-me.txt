@@ -74,4 +74,5 @@ explore different commit
 to view a specific commit
 +++++++++++++++++++++++++++++
 
-* git checkout <hashcode>
+* git checkout <hashcode> ( do not make changes here)
+* git checkout main ( to go back to the last commit/ where you were working)
