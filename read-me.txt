@@ -36,9 +36,9 @@ git remote repository
 differences in git
 +++++++++++++
 
-git diff <file>
-git diff 
-git diff --cached
+- git diff <file>
+- git diff 
+- git diff --cached
 
 
 
@@ -54,9 +54,24 @@ remove file from staging area:
 +++++++++++++++++++++++++++++++++
 this brings the staged files back into the working repository
 
-git restore --staged .
+* git restore --staged .
 
 reset the files back to their previous commit
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-git restore .
+* git restore .
+
+explore different commit
++++++++++++++++++++++++++++++++++
+
+* git log (show commits with hashcodes. press <spacebar> to view the rest of the commit and <q> for quit)
+* git show <hashcode> shows all the changes made for a specific commit
+* git log -p (same as first with more details)
+* git log --oneline
+* git log --grap ='part of the commit message'
+* git log --graph 
+
+to view a specific commit
++++++++++++++++++++++++++++++
+
+* git checkout <hashcode>
