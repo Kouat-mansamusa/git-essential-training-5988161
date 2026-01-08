@@ -22,14 +22,6 @@ starting from remote repo
 5) git push
 
 
-differences in git
-+++++++++++++
-
-git diff <file>
-git diff 
-git diff --cached
-
-
 starting from local repo
 ++++++++++++++++++++++++++++++++++
 You have a folder on your local repository which you want to connect to a 
@@ -40,3 +32,31 @@ git remote repository
 3) git add . (to add all the files of the local repo)
 4) git remote add origin <url of the remote repo>
 5)git push --set-upstream origin main (git push only would not work in this case )
+
+differences in git
++++++++++++++
+
+git diff <file>
+git diff 
+git diff --cached
+
+
+
+folder
+++++++++++++++++
+git does not track empty folders. 
+meaning: if you commit or push an empty folder, it will not appear in the remote repo and in the 
+staging area but will be present in your local/working repository
+
+to make sure that git recognise an empty folder create the file ".gitkeep" inside the empty folder.
+
+remove file from staging area: 
++++++++++++++++++++++++++++++++++
+this brings the staged files back into the working repository
+
+git restore --staged .
+
+reset the files back to their previous commit
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+git restore .
