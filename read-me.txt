@@ -3,7 +3,6 @@ Forking a repository allows you to freely experiment with changes
 without affecting the original project.
 
 git commands 
-+++++++++++++++++
 
 to stage files for commit: 
 1) git add filename.experiment
@@ -11,68 +10,3 @@ to stage files for commit:
 
 3) git commit -m "message" (commit to the local repo. you are ahead of the remote repo, therefore, you need a push)
 4) git push
-
-starting from remote repo
-+++++++++++++++++++++++++++++++++
-
-1) create a fork which is like a copy of the remote where you can do the changes
-2) git clone <url of fork> 
-3) git add . (if you make any changes in the files of the repo)
-4) git commit -m "commit message"
-5) git push
-
-
-starting from local repo
-++++++++++++++++++++++++++++++++++
-You have a folder on your local repository which you want to connect to a 
-git remote repository
-
-1) create the local repository
-2) create the remote repository
-3) git add . (to add all the files of the local repo)
-4) git remote add origin <url of the remote repo>
-5)git push --set-upstream origin main (git push only would not work in this case )
-
-differences in git
-+++++++++++++
-
-- git diff <file>
-- git diff 
-- git diff --cached
-
-
-
-folder
-++++++++++++++++
-git does not track empty folders. 
-meaning: if you commit or push an empty folder, it will not appear in the remote repo and in the 
-staging area but will be present in your local/working repository
-
-to make sure that git recognise an empty folder create the file ".gitkeep" inside the empty folder.
-
-remove file from staging area: 
-+++++++++++++++++++++++++++++++++
-this brings the staged files back into the working repository
-
-* git restore --staged .
-
-reset the files back to their previous commit
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-* git restore .
-
-explore different commit
-+++++++++++++++++++++++++++++++++
-
-* git log (show commits with hashcodes. press <spacebar> to view the rest of the commit and <q> for quit)
-* git show <hashcode> shows all the changes made for a specific commit
-* git log -p (same as first with more details)
-* git log --oneline
-* git log --grap ='part of the commit message'
-* git log --graph 
-
-to view a specific commit
-+++++++++++++++++++++++++++++
-
-* git checkout <hashcode> ( do not make changes here)
-* git checkout main ( to go back to the last commit/ where you were working)
