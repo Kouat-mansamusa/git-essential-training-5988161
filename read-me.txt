@@ -1,3 +1,12 @@
 a fork is a copy of a repository. 
 Forking a repository allows you to freely experiment with changes 
 without affecting the original project.
+
+git commands 
+
+to stage files for commit: 
+1) git add filename.experiment
+2) git add . ( for all the changes to be staged)
+
+3) git commit -m "message" (commit to the local repo. you are ahead of the remote repo, therefore, you need a push)
+4) git push
